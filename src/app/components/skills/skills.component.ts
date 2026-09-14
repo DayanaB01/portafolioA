@@ -14,11 +14,11 @@ export class SkillsComponent {
     },
     {
       label: 'backend',
-      items: ['.NET / C#', 'API REST', 'Entity Framework', 'Autenticación JWT']
+      items: ['.NET / C#', 'API REST', 'Entity Framework', 'Postman']
     },
     {
       label: 'datos',
-      items: ['SQL Server', 'T-SQL avanzado', 'Modelado relacional', 'Procedimientos almacenados']
+      items: ['SQL Server', 'PostgreSql', 'Modelado relacional', 'Procedimientos almacenados']
     }
   ];
 }

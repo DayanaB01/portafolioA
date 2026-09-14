@@ -9,21 +9,25 @@ import { ExperienceEntry } from 'src/app/models/experience.model';
 export class ExperienceComponent {
   entries: ExperienceEntry[] = [
     {
-      period: '2024 — actualidad',
+      period: 'Actualidad',
+      title: 'Estudiante de Ingeniera Informática',
+      description: 'Universidad de Caldas - Horario flexible para laborar.'
+    },
+    {
+      period: '2024 — 2026',
       title: 'Desarrollador Full Stack',
-      description: 'Empresa / equipo — desarrollo de módulos web con Angular y .NET, mantenimiento de bases de datos SQL Server y participación en decisiones de arquitectura.'
+      description: 'Independiente — Desarrollo de módulos web con Angular, React (NextJs), React Native, .NET, mantenimiento de bases de datos SQL Server, postgreSQL, además de herramientas como postman y participación en decisiones de arquitectura y diseño.'
     },
     {
-      period: '2023 — 2024',
-      title: 'Desarrollador Junior',
-      description: 'Empresa / equipo — primeras contribuciones en proyectos .NET, soporte en consultas SQL y corrección de errores en producción.'
+      period: '2022 — 2023',
+      title: 'Desarrolladora Junior',
+      description: 'Algoritmo s.a / equipo — primeras contribuciones en proyectos .NET, Angular  Framework, soporte en consultas SQL y corrección de errores en producción.'
     },
     {
-      period: '2022',
-      title: 'Ingeniero en Sistemas — título obtenido',
-      description: 'Universidad / institución — proyecto de grado relacionado con bases de datos y desarrollo web.'
+      period: '2020',
+      title: 'Sistemas Informáticos — Tecnóloga en Sistemas Informáticos',
+      description: 'Universidad de Caldas — Proyectos de desarrollo web.'
     }
   ];
-
   //type: 'work' | 'education' para dar orden
 }

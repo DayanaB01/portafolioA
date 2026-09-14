@@ -1,0 +1,15 @@
+  <div class="titlebar">
+    <div class="titlebar-inner">
+      <div class="titlebar-left">
+        <div class="dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+        </div>
+        <span class="titlebar-path">Portafolio Dayana Betancur</span>
+      </div>
+      <nav class="titlebar-nav">
+        <a href="" *ngFor="let link of navlinks" (click)="scrollTo(link.target)">{{link.label}}</a>
+      </nav>
+    </div>
+  </div>

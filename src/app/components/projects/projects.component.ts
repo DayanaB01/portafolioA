@@ -13,44 +13,45 @@ openProjectHash: string | null = 'a3f9e1c'; // primero abierto por defecto
   projects: Project[] = [
     {
       hash: 'a3f9e1c',
-      title: 'Sistema de Gestión Académica',
+      title: 'Sistema de Gestión Gastronomica',
       tagline: 'Base de datos + procedimientos almacenados',
-      description: 'Sistema de matrículas y calificaciones para una institución educativa. Modelado relacional desde cero, con procedimientos almacenados para cálculo de promedios y reportes, y control de concurrencia en inscripciones.',
+      description: 'Sistema que permite almacenar recetas gastrónomicas. Estructurado desde cero, para almacenar, crear, ver, editar recetas que el usuario desee desde su propia cuenta.',
       details: [
-        { label: 'tablas', value: '14, normalizadas a 3FN' },
-        { label: 'procedimientos', value: 'promedios, reportes, matrícula' },
-        { label: 'rol', value: 'diseño de modelo + backend' }
+        { label: 'Base de Datos', value: 'Firebase' },
+        { label: 'procedimientos', value: 'crear, actualizar, leer, eliminar recetas' },
+        { label: 'rol', value: 'Fronted-Backend-BD' }
       ],
-      tech: ['SQL Server', 'T-SQL', '.NET C#', 'Entity Framework'],
-      repoUrl: 'https://github.com/tu-usuario/gestion-academica',
-      demoUrl: ''
+      tech: ['Firebase', 'Angular', 'Booststrap'],
+      repoUrl: 'https://github.com/DayanaB01/RecetasOn',
+      demoUrl: 'https://dayanab01.github.io/RecetasOn/'
     },
     {
       hash: '7b2d84f',
-      title: 'Plataforma de Inventario Web',
+      title: 'Plataforma de Turismo',
       tagline: 'Angular + API REST en .NET',
-      description: 'Aplicación web para control de inventario y pedidos, con autenticación por roles, dashboard de indicadores en tiempo real y consumo de API REST propia.',
+      description: 'Aplicación web para visualisación de lugares turisticos, rutas y planes de diversión, autenticando usurios y clientes, además consumo de API REST propia.',
       details: [
-        { label: 'frontend', value: 'Angular, RxJS, componentes reutilizables' },
-        { label: 'backend', value: '.NET Web API, JWT auth' },
-        { label: 'rol', value: 'desarrollo full stack' }
+        { label: 'frontend', value: 'Angular, componentes reutilizables, Angular Material' },
+        { label: '', value: '.NET Web API' },
+        { label: 'Base de Datos', value: 'SQL - SQL server' },
+        { label: 'rol', value: 'Desarrolladora full Stack' },
       ],
-      tech: ['Angular', '.NET Web API', 'SQL Server', 'JWT'],
-      repoUrl: 'https://github.com/tu-usuario/inventario-web',
-      demoUrl: 'https://inventario-demo.tu-dominio.com'
+      tech: ['Angular', '.NET Web API', 'SQL Server', 'Angular Material'],
+      repoUrl: 'https://github.com/DayanaB01/Frontend_ET',
+      demoUrl: ''
     },
     {
       hash: 'c19a067',
-      title: 'App Móvil de Seguimiento de Tareas',
-      tagline: 'React Native + backend compartido',
-      description: 'Aplicación móvil multiplataforma para gestión de tareas de equipo, sincronizada con el mismo backend .NET de la plataforma web, demostrando reutilización de arquitectura.',
+      title: 'Web Creador de campañas Marketing',
+      tagline: 'React + backend Mongo BD + stripe',
+      description: 'Plataforma web para creadores de campañas, utilizados en meta, tiktok, y otras plataformas. Utilizando API de IA',
       details: [
-        { label: 'frontend', value: 'React Native, navegación por stack' },
-        { label: 'backend', value: 'API .NET compartida, notificaciones push' },
-        { label: 'rol', value: 'desarrollo móvil + integración API' }
+        { label: 'frontend', value: 'React' },
+        { label: 'backend', value: 'MongoDb, API IA, + plataforma de pago Stripe' },
+        { label: 'rol', value: 'Desarrolladora full Stack' }
       ],
-      tech: ['React Native', '.NET Web API', 'SQL Server'],
-      repoUrl: 'https://github.com/tu-usuario/tareas-app',
+      tech: ['NextJs', 'MongoBD', 'IA', 'Stripe'],
+      repoUrl: 'https://github.com/DayanaB01/CeliumLab',
       demoUrl: ''
     }
   ];

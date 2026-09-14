@@ -1,0 +1,20 @@
+    <section class="hero">
+      <div class="prompt-line">
+        <span class="arrow">➜</span>
+      </div>
+      <h1>{{fullName}}<span class="cursor"></span></h1>
+      <p class="role">
+        Tecnóloga en Sistemas Informáticos / estudiante de Ingenieria Informática / <strong>Desarrolladora Full Stack</strong> con 3 años de experiencia
+        construyendo aplicaciones web y móviles sobre <strong>.NET</strong>, <strong>Angular</strong> ,<strong>React y React Native</strong> y
+        bases de datos relacionales <strong>SQL</strong>.
+      </p>
+      <div class="stack-badges">
+        <span *ngFor="let tech of stack" class="badge" [class.on]="tech.highlighted">
+            {{tech.label}}
+        </span>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" (click)="downloadCV()">Descargar CV</button>
+        <button class="btn btn-ghost" (click)="scrollToProjects()">Ver proyectos ↓</button>
+      </div>
+    </section>

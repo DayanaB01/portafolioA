@@ -7,6 +7,9 @@ import { PrincipalPageComponent } from './components/principal-page/principal-pa
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { SkillsComponent } from './components/skills/skills.component';
     PrincipalPageComponent,
     ProjectsComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent,
+    NavbarComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

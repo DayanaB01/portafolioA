@@ -1,7 +1,148 @@
-/* :root{
-   --bg: #0B0E14;
+/* ============================================
+   VARIABLES GLOBALES — paleta "Developer Console"
+   ============================================ */
+:root {
+  --bg: #0B0E14;
+  --bg-panel: #10141C;
+  --bg-panel-2: #151A24;
   --border: #232936;
+
+  --text: #C9D1D9;
   --text-dim: #6B7280;
+  --text-bright: #F0F3F8;
+
   --accent: #5EEAD4;
-  --font-mono: 'JetBrains Mono', 'Fira Code',
-} */
+  --accent-dim: rgba(45, 212, 191, 0.2);
+  --accent2: #F0B429;
+  --danger: #F87171;
+
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ============================================
+   RESET
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* ============================================
+   LAYOUT COMPARTIDO
+   Cada componente de sección usa esta misma
+   estructura de contenedor — evita repetirla
+   en cada .component.scss
+   ============================================ */
+.section {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.section-head {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+
+  .num {
+    color: var(--accent);
+  }
+
+  h2 {
+    font-family: var(--font-sans);
+    font-size: 22px;
+    color: var(--text-bright);
+    font-weight: 600;
+  }
+}
+
+/* ============================================
+   BOTONES COMPARTIDOS
+   Usados en Hero y Contact
+   ============================================ */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0B0E14;
+  border-color: var(--accent);
+  font-weight: 600;
+
+  &:hover {
+    background: #4DD8C2;
+  }
+}
+
+.btn-ghost {
+  color: var(--text-bright);
+  background: transparent;
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+/* ============================================
+   ACCESIBILIDAD
+   ============================================ */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

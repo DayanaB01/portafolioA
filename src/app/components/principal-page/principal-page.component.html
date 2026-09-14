@@ -1,65 +1,17 @@
 <body>
-
-  <div class="titlebar">
-    <div class="titlebar-inner">
-      <div class="titlebar-left">
-        <div class="dots">
-            <div class="dot dot-red"></div>
-            <div class="dot dot-yellow"></div>
-            <div class="dot dot-green"></div>
-        </div>
-        <span class="titlebar-path">~/portafolio/Dayana Betancur</span>
-      </div>
-      <nav class="titlebar-nav">
-        <a href="" *ngFor="let link of navlinks" (click)="scrollTo(link.target)">{{link.label}}</a>
-      </nav>
-    </div>
-  </div>
-
+  <!--NAVBAR-->
+  <app-navbar/>
   <div class="wrap">
-
-    <section class="hero">
-      <div class="prompt-line">
-        <span class="arrow">➜</span>
-         ~ whoami</div>
-      <h1>{{fullName}}<span class="cursor"></span></h1>
-      <p class="role">
-        Ingeniero de Sistemas / <strong>Desarrollador Full Stack</strong> con 3 años de experiencia
-        construyendo aplicaciones web y móviles sobre <strong>.NET</strong>, <strong>Angular</strong> y
-        bases de datos relacionales.
-      </p>
-      <div class="stack-badges">
-        <span *ngFor="let tech of stack" class="badge" [class.on]="tech.highlighted">
-            {{tech.label}}
-        </span>
-      </div>
-      <div class="hero-actions">
-        <button class="btn btn-primary" (click)="downloadCV()">Descargar CV</button>
-        <button class="btn btn-ghost" (click)="scrollToProjects()">Ver proyectos ↓</button>
-      </div>
-    </section>
-    /*PROYECTOS SECCION*/
+    <!--SECCION DE DESCRIPCION-->
+    <app-hero/>
+    <!--PROYECTOS SECCION-->
     <app-projects/>
-    <--/*SECCION DE EXPERIENCIA*/-->
+    <!--SECCION DE EXPERIENCIA-->
     <app-experience/>
-
-//SECCION DE HABILIDADES
-<app-skills/>
-
-    <section class="contact" id="contacto">
-      <h2>¿Hablamos?</h2>
-      <p>Disponible para nuevas oportunidades como desarrollador full stack. Respondo rápido.</p>
-      <div class="contact-links">
-        <button class="btn btn-primary">Enviar correo</button>
-        <button class="btn btn-ghost">LinkedIn</button>
-        <button class="btn btn-ghost">GitHub</button>
-      </div>
-    </section>
-
-    <footer>
-      <span>© 2026 Tu Nombre</span>
-      <span>construido con cuidado</span>
-    </footer>
+    <!--SECCION DE HABILIDADES-->
+    <app-skills/>
+    <!--SECCION DE CONTACTO-->
+    <app-contact/>
 
   </div>
 
