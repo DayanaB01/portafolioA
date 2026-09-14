@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PrincipalPageComponent } from './components/principal-page/principal-page.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'principalPage', pathMatch:'full'},
   {path: 'principalPage', component: PrincipalPageComponent},
+  {path: 'projectsAll', component:ProjectsComponent}
 ];
 
 @NgModule({
