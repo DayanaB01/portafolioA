@@ -21,7 +21,7 @@ export class HeroComponent {
     { label: 'SQL Server', highlighted: true }
 ];
 downloadCV():void{
-  window.open('/assets/TecnoSistemas_DayanaBetancur.pdf', '_blank');
+  window.open('/assets/DayanaBetancur_TecSistemas.pdf', '_blank');
 }
 
 scrollToProjects():void{
