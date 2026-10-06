@@ -21,7 +21,7 @@ export class HeroComponent {
     { label: 'SQL Server', highlighted: true }
 ];
 downloadCV():void{
-  window.open('https://drive.google.com/file/d/1GFbw8GyI1al7Mgjsh36AqHsLXssRH17L/view?usp=sharing', '_blank');
+  window.open('https://dayanab01.github.io/portafolioA/assets/DayanaBetancur_TecSistemas.pdf', '_blank');
 }
 
 scrollToProjects():void{
